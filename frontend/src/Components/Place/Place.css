@@ -1,0 +1,22 @@
+.place{
+    margin:30px;
+    width: 50%;
+    text-align: center;
+    margin-left: 240px;
+
+height:850px ;
+}
+
+ h2{
+     color: blue;
+
+
+    }
+    .grp_btn{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+justify-content: space-around;    }
+.rating{
+    margin-left: 38%;
+  }

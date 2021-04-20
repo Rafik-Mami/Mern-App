@@ -1,0 +1,10 @@
+.signin{
+    width: 50%;
+    margin: auto;
+    margin-top: 100px;
+    border:1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
+    
+}

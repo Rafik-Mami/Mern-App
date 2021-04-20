@@ -1,0 +1,10 @@
+.signup{
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border:1px solid white;
+    border-radius: 5px;
+    padding: 52px;
+    background-color: rgba(0,0,0,0.4);
+}

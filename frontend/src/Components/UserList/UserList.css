@@ -1,0 +1,13 @@
+.list_user{
+    
+    margin:40px;
+    width: 50%;
+    text-align: center;
+    margin-left: 390px;
+}
+.inputFilter{
+    width: 55% !important;
+    margin: auto !important;
+    margin-top: 50px !important;
+    border-radius: 12px;
+}

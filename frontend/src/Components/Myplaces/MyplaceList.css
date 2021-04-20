@@ -1,0 +1,8 @@
+.mylist{
+    margin-left: 380px;
+
+}
+.myplace{
+    display: flex;
+    flex-direction: column;
+}

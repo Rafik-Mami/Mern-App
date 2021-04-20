@@ -1,0 +1,22 @@
+.user{
+margin:40px;
+ border-radius: 100px;
+    width: 40rem;
+     background-color: rgba(0,0,0,0);
+}
+.name{
+color:white ;
+font-size: larger;
+}
+h5{
+  color: black;
+  width: 80%;
+  height: 50px;
+  background-color: white;
+  border: gray;
+  border-radius: 20px;
+  margin: 30px;
+  text-align: center;
+  padding-top: 15px;
+  margin-left: 70px;
+}

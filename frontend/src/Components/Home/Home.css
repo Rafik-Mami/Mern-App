@@ -1,0 +1,32 @@
+.image{
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    border-radius: 60px;
+    border: 2px solid gray;
+    opacity: 0.85;
+    
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    width: 70%;
+    margin-top: 50px;
+}
+h1{
+    color:gray;
+    font-size: 50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p{
+    margin: 40px;
+    color: white;
+    font-size: 20px;
+}

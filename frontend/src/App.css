@@ -1,0 +1,19 @@
+.App {
+  text-align: center;
+}
+.auth{
+
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding-left: 800px;
+}
+.title{
+  font-size: large;
+}
+.footer{
+  background:gray;
+}
+.footer1{
+  margin-bottom: 0;
+}

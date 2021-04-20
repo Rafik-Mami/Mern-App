@@ -1,0 +1,17 @@
+.newplace{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border:1px solid white;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.4);
+}
+.upload{
+    text-align: center;
+    margin: auto;
+}
