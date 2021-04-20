@@ -5,7 +5,9 @@ const connectDB = require('./config/connectDB')
 
 require('dotenv').config()
 connectDB()
+var distDir = __dirname + "/dist/";
 
+app.use(express.static(distDir));
 app.use(express.json())
 
 app.use('/api/user',require('./routes/user'))
