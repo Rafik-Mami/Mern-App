@@ -3,7 +3,7 @@ import {useSelector,useDispatch} from 'react-redux'
 import {Card,Button} from 'react-bootstrap'
 import './Place.css'
 import BeautyStars from 'beauty-stars';
-
+import {getComment} from '../../JS/Actions/actionsUser'
 //import { Rate } from 'antd';
 import Rater from 'react-rater'
 import 'react-rater/lib/react-rater.css'
@@ -34,7 +34,7 @@ const dispatch = useDispatch()
                     <div className='grp_btn'>
                       {isAdmin? <Button variant='danger' onClick={()=>dispatch(deletePlace(place._id))}> delete place </Button>:null}
                <Link to={`/creator`}> <Button variant="secondary" onClick={()=>dispatch(getOneUser(place.user_id))}>added by</Button></Link>
-               <Link to={`/comments`} ><Button  onClick={()=>dispatch(getOnePlace(place._id))}>comments</Button></Link>
+               <Link to={`/comments`} ><Button  onClick={()=>{dispatch(getOnePlace(place._id)); dispatch(getComment())}}>comments</Button></Link>
                </div>
                 </Card.Body>
             </Card>

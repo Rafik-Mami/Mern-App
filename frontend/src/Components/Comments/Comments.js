@@ -8,18 +8,15 @@ const Comments = ({history}) => {
 
    
      
-    const Placenow = useSelector(state => state.PlaceRed.place.place)
-    useEffect(() => {
-        dispatch(getComment())
-        
-     }, [dispatch])
-    const [newcomment,setNewcomment] = useState({place_id:Placenow._id})
+    const Placenow =useSelector(state => state.PlaceRed.place._id)
+    console.log(useSelector(state => state.PlaceRed.place._id))
+    const [newcomment,setNewcomment] = useState({place_id:useSelector(state => state.PlaceRed.place._id)})
 const handleChange=(e)=>{
     setNewcomment({...newcomment,[e.target.name]:e.target.value})
 }
 
-const COMMENTS = useSelector(state => state.commentReducer.comment.listComment)
-
+const COMMENTS = useSelector(state => state.commentReducer.comment)
+console.log(COMMENTS[2])
     return (
         <div className='comment_page'>
             <Form.Group controlId="formBasicText">

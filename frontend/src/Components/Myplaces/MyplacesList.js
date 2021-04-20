@@ -9,7 +9,7 @@ import EditPlace from '../EditPlace/EditPlace'
 import './MyplaceList.css'
 const MyplacesList = () => {
    
-    const places = useSelector(state => state.placeReducer.places.listPlaces)
+    const places = useSelector(state => state.placeReducer.places)
     const user = useSelector(state => state.userReducer.user)
     const [edit, setEdit] = useState(false)
     const [placeToEdit,setPlacetoedit]=useState({})

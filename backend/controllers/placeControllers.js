@@ -3,8 +3,8 @@ const Place = require('../models/Place')
 const getAllPlaces = async (req, res) => {
     try {
       
-        const listPlaces = await Place.find()
-        res.status(200).send({ msg: "get places successfully", listPlaces })
+      //  const listPlaces = await Place.find()
+        res.status(200).send( await Place.find())
 
     } catch (error) {
         res.status(400).send({ msg: "can not get places for this user", error })
@@ -15,10 +15,10 @@ const getAllPlaces = async (req, res) => {
 const getOnePlace = async (req, res) => {
     try {
         const { _id } = req.params
-        const place = await Place.findById({ _id })
+       // const place = await Place.findById({ _id })
        
 
-            res.status(200).send({ msg: "get place successfully", place })
+            res.status(200).send( await Place.findById({ _id }))
         
     } catch (error) {
         res.status(400).send({ msg: "can not get place for this id", error })

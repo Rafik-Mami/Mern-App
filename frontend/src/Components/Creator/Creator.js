@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useSelector } from 'react-redux'
 import { Card } from 'react-bootstrap'
 const Creator = () => {
-    const User = useSelector(state => state.oneuserReducer.user.user)
+    const User = useSelector(state => state.oneuserReducer.user)
     useEffect(() => {
         console.log(User)
     }, [])

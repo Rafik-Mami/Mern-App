@@ -13,10 +13,9 @@ const getUsers =async (req,res)=>{
 const getOneUser = async (req, res) => {
     try {
         const { _id } = req.params
-        const user = await User.findById({ _id })
        
 
-            res.status(200).send({ msg: "get place successfully", user })
+            res.status(200).send(await User.findById({ _id }))
         
     } catch (error) {
         res.status(400).send({ msg: "can not get place for this id", error })

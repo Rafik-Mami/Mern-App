@@ -1,5 +1,7 @@
 import React from 'react'
 import {useSelector,useDispatch} from 'react-redux'
+import { getPlaces } from '../JS/Actions/actionsUser'
+
 import {Navbar,Nav,Button} from 'react-bootstrap'
 import {NavLink } from 'react-router-dom'
 import {logout} from '../JS/Actions/actionsUser'
@@ -13,7 +15,7 @@ const dispatch = useDispatch()
       <NavLink exact to='/' className="nav-link" activeClassName="selected-link">Home</NavLink>
       <NavLink to='/users' className="nav-link" activeClassName="selected-link">Users</NavLink>
       {isAuth ?<NavLink to='/profile' className="nav-link" activeClassName="selected-link">Profile</NavLink>:null}
-      <NavLink to='/places' className="nav-link" activeClassName="selected-link">Places</NavLink>
+      <NavLink to='/places' onClick={()=>dispatch(getPlaces())} className="nav-link" activeClassName="selected-link">Places</NavLink>
       {isAuth? <NavLink to='/myplaces' className="nav-link" activeClassName="selected-link">MyPlaces</NavLink>:null}
 
             

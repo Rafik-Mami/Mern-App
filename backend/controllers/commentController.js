@@ -19,8 +19,8 @@ const addComment = async (req, res) => {
 const getAllComment = async (req, res) => {
     try {
       
-        const listComment = await Comment.find()//.populate('user')
-        res.status(200).send({ msg: "get places successfully", listComment })
+     //   const listComment = await Comment.find()
+        res.status(200).send(await Comment.find())
 
     } catch (error) {
         res.status(400).send({ msg: "can not get places for this user", error })

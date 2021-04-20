@@ -12,10 +12,10 @@ import {Card} from 'react-bootstrap'
 import Place from '../Place/Place'
 const PlaceList = () => {
     const dispatch = useDispatch()
-    useEffect(() => {
+   /* useEffect(() => {
         dispatch(getPlaces())
-    }, [dispatch])
-    const places = useSelector(state => state.placeReducer.places.listPlaces)
+    }, [dispatch])*/
+    const places = useSelector(state => state.placeReducer.places)
     const isAuth = useSelector(state => state.userReducer.isAuth)
     const desc = ['terrible', 'bad', 'normal', 'good', 'wonderful'];
 

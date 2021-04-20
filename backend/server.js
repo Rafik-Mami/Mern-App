@@ -14,6 +14,12 @@ app.use('/api/user',require('./routes/user'))
 app.use('/api/places/',require('./routes/place'))
 app.use('/api/comment',require('./routes/comment'))
 const PORT = process.env.PORT
+if(process.env.NODE_ENV=='production'){
+    app.use(express.static('frontend/build'))
+    app.get('*',(req,res)=>{
+        res.sendFile(path.resolve(__dirname,'frontend','build','index.html'))
+    })
+}
 
 app.listen(PORT, (error) => {
     error ? console.error('can not connected to server ' + error) : console.log('server running on port' + PORT)
