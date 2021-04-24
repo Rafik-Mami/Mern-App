@@ -1,12 +1,11 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const app = express()
-const connectDB = require('./config/connectDB')
-const path=require('path')
-const bodyParser =require('body-parser')
 require('dotenv').config()
 
-app.use(bodyParser.json())
+const connectDB = require('./config/connectDB')
+const path=require('path')
+
 connectDB()
 
 app.use(express.json())
