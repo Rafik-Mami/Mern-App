@@ -22,7 +22,10 @@ const toggleTrue=()=>{
 
                     <Card.Title style={{margin:'50px'}}><h2>{place.title}</h2></Card.Title>
                     <Card.Title style={{margin:'50px'}}>{place.description}</Card.Title>
+                  
                     <Card.Subtitle className="mb-2 text-muted" style={{marginBottom:'150px'}}>{place.address}</Card.Subtitle>
+                    <Button  variant="danger" >delete</Button>
+
                     <Button  style={{marginTop:'50px'}} variant='primary'style={{ width: '70px',marginLeft:'100px'  }}  onClick={toggleTrue}>Edit</Button>
                 </Card.Body>
             </Card></div>:    <div className='edit'> <EditPlace place={place}  /></div>

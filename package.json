@@ -6,11 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "frontend": "cd frontend && npm start",
-    
-
-    "backend": "cd backend && nodemon server",
+   "backend": "cd backend && nodemon server",
     "dev": "concurrently \"npm run frontend \"    \" npm run backend \"  ",
-    "heroku postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend "
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
   },
   "author": "rafik mami",
   "license": "ISC",
